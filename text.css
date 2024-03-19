@@ -1,0 +1,41 @@
+/* CSS styling for brewery data display */
+.brewery-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.brewery-card {
+    flex: 0 0 calc(33.33% - 20px);
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #add8e6; /* Classic light blue background color */
+}
+
+.brewery-card h3 {
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif; /* Classic serif font */
+    color: #333; /* Classic dark gray color */
+}
+
+.brewery-card p {
+    font-family: 'Times New Roman', Times, serif; /* Classic serif font */
+    color: #333; /* Classic dark gray color */
+}
+
+.brewery-card a {
+    font-family: 'Times New Roman', Times, serif; /* Classic serif font */
+    color: #007bff; /* Classic blue color */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .brewery-card {
+        flex-basis: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+}
